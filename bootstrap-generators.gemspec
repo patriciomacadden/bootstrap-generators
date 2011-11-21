@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Patricio Mac Adden"]
   s.email       = ["patriciomacadden@gmail.com"]
   s.homepage    = "http://github.com/patriciomacadden/bootstrap-generators"
-  s.summary     = %q{This gem provides rails generators with twitter/bootstrap goodness.}
-  s.description = %q{This gem provides rails generators with twitter/bootstrap goodness.}
+  s.summary     = %q{Rails generators for twitter/bootstrap goodness.}
+  s.description = %q{Rails generators for twitter/bootstrap goodness.}
 
   s.rubyforge_project = "bootstrap-generators"
 
