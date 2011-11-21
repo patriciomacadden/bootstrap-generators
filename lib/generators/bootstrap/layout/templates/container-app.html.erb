@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%%= yield(:title) || '<%= camelized_application_name %>' %></title>
+    <%%= stylesheet_link_tag    "application" %>
+    <%%= javascript_include_tag "application" %>
+    <%%= csrf_meta_tags %>
+  </head>
+  <body>
+    
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <%%= link_to '<%= camelized_application_name %>', '#', class: 'brand' %>
+          <ul class="nav">
+            <li class="active"><%%= link_to '<%= camelized_application_name %>', '#' %></li>
+          </ul>
+          <!-- Example login form -->
+          <form action="" class="pull-right">
+            <input class="input-small" type="text" placeholder="Username">
+            <input class="input-small" type="password" placeholder="Password">
+            <button class="btn" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      
+      <div class="content">
+        <div class="page-header">
+          <h1><%= camelized_application_name %> <small>Supporting text or tagline</small></h1>
+        </div>
+        <%% flash.each do |name, message| %>
+          <div class="alert-message<%%= " #{bootstrap_flash_name(name)}" %> block-message" data-alert="alert">
+            <%%= link_to '×', '#', class: 'close' %>
+            <%%= message %>
+          </div>
+        <%% end %>
+        <div class="row">
+          <div class="span10">
+            <%%= yield %>
+          </div>
+          <div class="span4">
+            <h3>Secondary content</h3>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <p>&copy; <%= camelized_application_name %> <%= Time.now.year %></p>
+      </footer>    
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,23 @@
+===============================================================================
+
+Now you must do some setup manually if you haven't yet:
+
+  1. Add bootstrap.min.css to your application.css file:
+      
+      *= require bootstrap.min.css
+      
+  2. Add bootstrap javascript files to your application.js file:
+      
+      //= require_tree ../../../vendor/assets/javascripts/bootstrap/
+      
+    Or do it separately:
+      
+      //= require bootstrap/bootstrap-alerts.js
+      //= require bootstrap/bootstrap-dropdown.js
+      //= require bootstrap/bootstrap-modal.js
+      //= require bootstrap/bootstrap-twipsy.js
+      //= require bootstrap/bootstrap-popover.js
+      //= require bootstrap/bootstrap-scrollspy.js
+      //= require bootstrap/bootstrap-tabs.js
+
+===============================================================================
