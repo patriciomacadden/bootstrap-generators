@@ -34,7 +34,8 @@ $ rails generate bootstrap:layout NAME [options]
 
 This command will create the layout called NAME into your rails application. Use the ```type``` option to create a predefined layout.
 Available layouts are:
-* application (similar to the newly created rails layout, but with the flashes)
+
+* application (similar to the created in a newly rails application)
 * [hero](http://twitter.github.com/bootstrap/examples/hero.html)
 * [fluid](http://twitter.github.com/bootstrap/examples/fluid.html)
 * [container-app](http://twitter.github.com/bootstrap/examples/container-app.html)
