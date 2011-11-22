@@ -10,7 +10,7 @@ In your Gemfile:
 gem 'bootstrap-generators', :git => 'https://github.com/patriciomacadden/bootstrap-generators'
 ```
 
-And then:
+And then run:
 
 ```
 $ bundle
@@ -24,7 +24,7 @@ $ bundle
 $ rails generate bootstrap:install
 ```
 
-This command will copy all twitter/bootstrap files. Once ran, follow the instructions on how to setup.
+This generator will copy all assets files. Then, follow the instructions on how to setup them.
 
 ### Layout
 
@@ -32,7 +32,8 @@ This command will copy all twitter/bootstrap files. Once ran, follow the instruc
 $ rails generate bootstrap:layout NAME [options]
 ```
 
-This command will create the layout called NAME into your rails application. Available layouts are:
+This command will create the layout called NAME into your rails application. Use the ```type``` option to create a predefined layout.
+Available layouts are:
   * application (similar to the newly created rails layout, but with the flashes)
   * [hero](http://twitter.github.com/bootstrap/examples/hero.html)
   * [fluid](http://twitter.github.com/bootstrap/examples/fluid.html)
