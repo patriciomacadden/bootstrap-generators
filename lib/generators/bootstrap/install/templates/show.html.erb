@@ -1,0 +1,12 @@
+<% attributes.each do |attribute| -%>
+<p>
+  <strong><%= attribute.human_name %>:</strong>
+  <em><%%= @<%= singular_table_name %>.<%= attribute.name %> %></em>
+</p>
+
+<% end -%>
+
+<div class="well">
+  <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn' %>
+  <%%= link_to 'Back', <%= index_helper %>_path, class: 'btn' %>
+</div>

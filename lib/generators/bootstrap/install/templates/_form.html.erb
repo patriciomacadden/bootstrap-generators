@@ -1,0 +1,19 @@
+<%%= form_for(@<%= singular_table_name %>) do |f| %>
+<% attributes.each do |attribute| -%>
+  <div class="clearfix<%%= ' error' if @<%= singular_table_name %>.errors.include? :<%= attribute.name %> %>">
+    <%%= f.label :<%= attribute.name %> %>
+    <div class="input">
+      <%%= f.<%= attribute.field_type %> :<%= attribute.name %> %>
+      <%% if @<%= singular_table_name %>.errors.include? :<%= attribute.name %> %>
+        <%% @<%= singular_table_name %>.errors[:<%= attribute.name %>].each do |error| %>
+          <span class="inline-help"><%%= error %></span>
+        <%% end %>
+      <%% end %>
+    </div>
+  </div>
+<% end -%>
+  <div class="actions">
+    <%%= f.submit nil, class: 'btn primary' %>
+    <%%= link_to 'Back', <%= index_helper %>_path, class: 'btn' %>
+  </div>
+<%% end %>
