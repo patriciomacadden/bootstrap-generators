@@ -4,7 +4,7 @@ Now you must do some setup manually if you haven't yet:
 
   1. Add bootstrap.min.css to your application.css file:
       
-      *= require bootstrap.min.css
+      *= require bootstrap/bootstrap.min.css
       
   2. Add bootstrap javascript files to your application.js file:
       
